@@ -1,0 +1,19 @@
+<p>doc-viewer works!</p>
+<button (click)="showPickerDialog()">Show Picker Dialog</button>
+<button (click)="show()">view excel</button>
+
+<ng-container
+*ngIf="doc; then loggedIn; else loggedOut">
+</ng-container>
+
+<ng-template #loggedIn>
+<div>
+ <ngx-doc-viewer url={{doc}} viewer="url" style="width:100%;height:80vh;"></ngx-doc-viewer>
+</div>
+</ng-template>
+<ng-template #loggedOut>
+<div>
+Please friend, login.
+</div>
+</ng-template>
+

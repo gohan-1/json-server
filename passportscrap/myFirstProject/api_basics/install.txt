@@ -1,0 +1,9 @@
+numpy
+ matplotlib
+ seaborn
+ pytesseract
+ cv2
+ sklearn
+ PIL
+ pyod
+ scipy

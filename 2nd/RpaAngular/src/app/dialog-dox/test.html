@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>testing</h2>
+
+<script>var serverUrl = 'https://v3beta.lightinfosys.com'; // Server URL 
+  var apiUrl = 'https://v3beta.lightinfosys.com'
+var url_extension = '/assist';
+var api_extension = '/bot'
+var bot_id = 120
+ 
+var account_id = 14
+/*edit params here*/ 
+var paramsObject = {
+	"region": ""
+}
+
+var main_script = document.createElement('script');
+main_script.setAttribute("type","text/javascript");
+main_script.setAttribute("src", serverUrl + url_extension +"/js/main.js");
+
+if (main_script.readyState) {
+    main_script.onreadystatechange = function () { // For old versions of IE
+      if (this.readyState == 'complete' || this.readyState == 'loaded') {
+        cb();
+      }
+    };
+} else {
+  main_script.onload = cb;
+}
+function cb() {
+  // var ddd = new NLPbot();
+}
+(document.getElementsByTagName("head")[0]).appendChild(main_script);</script>
+
+</body>
+</html> 
